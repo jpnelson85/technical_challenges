@@ -24,3 +24,13 @@
 
 #     findNextPalindrome(101)
 #     => 111
+
+def find_next_palindrome(num)
+  num += 1
+until num.to_s == num.to_s.reverse
+  num += 1
+end
+num
+end
+
+puts find_next_palindrome(166111111)
